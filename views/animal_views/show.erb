@@ -1,0 +1,35 @@
+<div class="pageTitle">
+
+  <fieldset>
+    <legend> <%= @animal.name %></legend>
+
+
+
+    <div class="pageContents">
+      <div class="animalThumbnail">
+        <img class ="image_thumbnail" src="/images/<%= @animal.name %>.jpg" alt="<%= @animal.name%>" height='200'/>
+      </div>
+      <div class="animalDetails">
+        <p>Name: <%= @animal.name %></p>
+        <p>Age: <%= @animal.age %></p>
+        <p>Breed: <%= @animal.breed %></p>
+        <p>Adoptable: <%= @animal.adoptable ? "true" : "false" %></p>
+        <p>Since: <%= @animal.admission %></p>
+        <p>Notes: <%= @animal.notes %></p>
+      </div>
+
+      <p>Info</p>
+      <p>Not Listing</p>
+      <p>Adoption info</p>
+
+    </div>
+  </div>
+</fieldset>
+
+
+  <a href="#">Previous</a>
+</div>
+
+<div>
+  <a href="#">Next</a>
+</div>

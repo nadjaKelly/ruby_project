@@ -1,0 +1,33 @@
+<div class="pageTitle">
+  <h1>Add Animal</h1>
+</div
+
+  <div class="pageContents">
+    <form method="post" action="/animals">
+      <div class="formRow">
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="name" required="required"/>
+      </div>
+      <div class="formRow">
+        <label for="age">Age:</label>
+        <input id="age" type="text" name="age" required="required"/>
+      </div>
+      <div class="formRow">
+        <label for="breed">Breed:</label>
+        <input id="breed" type="text" name="breed" required="required">
+      </div>
+      <div class="formRow">
+        <label for="adoptable">Adoptable:</label>
+        <input id="adoptable" type="radio" name="adoptable" value="yes" />Yes<br>
+        <input id="adoptable" type="radio" name="adoptable" value="no" />No<br>
+      </div>
+      <div class="formRow">
+        <label for="admisison">Since:</label>
+        <input id="admission" type="date" name="admission" required="required">
+      </div>
+      <div class="formRow">
+        <input type="submit" value="Submit New Animal"/>
+      </div>
+
+    </form>
+  </div>

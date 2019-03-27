@@ -1,0 +1,32 @@
+<div class="pageTitle">
+  <h1>Edit Pet</h1>
+</div>
+
+<div class="pageContents">
+  <form action="/animals/<%= @animal.id %>/update" method="post">
+    <div class="formRow">
+      <label for="name">Name:</label>
+      <input id="name" type="text" name="name" value="<%= @animal.name %>"/>
+    </div>
+    <div class="formRow">
+      <label for="age">Age:</label>
+      <input id="age" type="text" name="age" value="<%= @animal.age %>"/>
+    </div>
+    <div class="formRow">
+      <label for="breed">Breed:</label>
+      <input id="breed" type="text" name="breed" value="<%= @animal.breed %>"/>
+    </div>
+    <div class="formRow">
+      <label for="adoptable">Available to Adopt:</label>
+      <input id="adoptable" type="radio" name="adoptable" value="yes" />Yes<br>
+      <input id="adoptable" type="radio" name="adoptable" value="no" />No<br>
+    </div>
+    <div class="formRow">
+      <label for="admission">Admission Date:</label>
+      <input id="admission" type="date" name="admission" value="<%= @animal.admission %>">
+    </div>
+    <div class="formRow">
+      <input type="submit" value="Save Changes">
+    </div>
+  </form>
+</div>

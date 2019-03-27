@@ -1,0 +1,18 @@
+<div class="pageContents">
+  <h1>Animal</h1>
+</div>
+
+<div class="pageContents">
+
+  <div>
+    <a class="link" href="/animals/new">Add New Animal</a>
+  </div>
+
+  <% for animal in @animals %>
+
+      <fieldset>
+        <legend><%= animal.name %></legend>
+        <a class="link" href="/animals/<%= animal.id %>"><%= animal.name %></a>
+        <img class"image_thumbnail" src="/images/<%= animal.name %>.jpg" alt="<%= animal.name %>" height="200"/>
+      </fieldset>
+      <% end %>

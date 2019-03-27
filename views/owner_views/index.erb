@@ -1,0 +1,24 @@
+<div class="pageContents">
+  <h1>Humans</h1>
+</div>
+
+<div class="pageContents">
+
+  <div>
+    <a class="link" href="/owners/new">Add New Human</a>
+  </div>
+
+  <% for owner in @owners %>
+  <div class="owner">
+    <fieldset>
+      <legend><%= owner.name() %></legend>
+      <p>Name: <a class="link" href="/owners/<%= owner.id %>"><%= owner.name() %></a></p>
+      <p>Tel: <%= owner.tel() %></p>
+    </fieldset>
+  </div>
+
+  <% end %>
+
+
+
+</div>
